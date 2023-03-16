@@ -3,7 +3,7 @@ on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container: python/python:latest
+    container: python:latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
