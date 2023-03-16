@@ -1,0 +1,10 @@
+name: publish-edgeworker
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: python/python:latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Run script
+        run: python go.py
